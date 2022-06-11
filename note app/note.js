@@ -4,6 +4,7 @@ let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addTxt");
   let addTtl = document.getElementById("addTitle");
+  // addTxt.value.toUpperCase();
 
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -13,7 +14,7 @@ addBtn.addEventListener("click", function (e) {
   }
 
   let titleObject ={
-  title : addTitle.value,
+  title : addTtl.value,
   text : addTxt.value
   }
 
